@@ -16,23 +16,13 @@ export default function ContactPage() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2 font-bold text-xl text-blue-600">
             <Link href="/" className="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-6 w-6"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <path d="M8 14s1.5 2 4 2 4-2 4-2" />
-                <line x1="9" y1="9" x2="9.01" y2="9" />
-                <line x1="15" y1="9" x2="15.01" y2="9" />
-              </svg>
+            <Image
+              src="/logo.jpg"
+              alt="EfficiencePrime Logo"
+              width={40}
+              height={40}
+              className="h-12 w-12 object-contain"
+            />
               <span>EfficiencePrime</span>
             </Link>
           </div>
@@ -50,13 +40,12 @@ export default function ContactPage() {
           <QuoteButton>Demander un devis</QuoteButton>
         </div>
       </header>
-      <main className="flex-1">
-        {/* Le reste du contenu de la page contact reste inchangé */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-blue-50">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+      <main className="flex-1 flex flex-col">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-blue-50 flex-1 flex flex-col">
+          <div className="container px-4 md:px-6 flex-1 flex flex-col">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center flex-1">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contactez-Nous</h1>
+                <h1 className="text-3xl font-bold tracking-wide sm:text-4xl md:text-5xl">Contactez-Nous</h1>
                 <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Besoin d'informations sur nos services de comptabilité logiciels comptables et financiers ? N'hésitez pas à nous contacter.
                 </p>
@@ -65,9 +54,9 @@ export default function ContactPage() {
           </div>
         </section>
 
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-10 lg:grid-cols-2 items-start">
+        <section className="w-full py-12 md:py-24 lg:py-32 flex-1 flex flex-col">
+          <div className="container px-4 md:px-6 flex-1 flex flex-col">
+            <div className="grid gap-10 lg:grid-cols-2 items-start flex-1">
               <div className="space-y-8">
                 <div className="space-y-6">
                   <div className="flex flex-col items-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-6">
@@ -107,7 +96,7 @@ export default function ContactPage() {
                     <h3 className="text-xl font-semibold">À propos de moi</h3>
                     <p className="text-gray-500">
                       Comptable diplômé, je suis spécialisé dans
-                      l'implémentation et l'optimisation de solutions logiciels comptables et financiers Comptabilité pour les PME. Mon objectif est
+                      l'implémentation et l'optimisation de solutions logiciels comptables et financiers pour les PME. Mon objectif est
                       de vous aider à simplifier votre gestion financière et à prendre les meilleures décisions pour
                       votre entreprise.
                     </p>
@@ -327,7 +316,7 @@ export default function ContactPage() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Nos clients témoignent</h2>
                 <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Découvrez ce que nos clients disent de notre accompagnement logiciels comptables et financiers Comptabilité
+                  Découvrez ce que nos clients disent de notre accompagnement logiciels comptables et financiers
                 </p>
               </div>
             </div>
@@ -416,23 +405,13 @@ export default function ContactPage() {
           <div className="grid gap-8 lg:grid-cols-3">
             <div className="space-y-4">
               <div className="flex items-center gap-2 font-bold text-xl text-blue-400">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="h-6 w-6"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M8 14s1.5 2 4 2 4-2 4-2" />
-                  <line x1="9" y1="9" x2="9.01" y2="9" />
-                  <line x1="15" y1="9" x2="15.01" y2="9" />
-                </svg>
+                <Image
+                  src="/logo.jpg"
+                  alt="EfficiencePrime Logo"
+                  width={32}
+                  height={32}
+                  className="h-8 w-8 object-contain"
+                />
                 <span>SageExpert</span>
               </div>
               <p className="text-gray-400">
